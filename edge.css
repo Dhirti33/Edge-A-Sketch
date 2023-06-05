@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+label{
+    align-self: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-bottom: 5px solid black;
+    width: 20rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#edge{
+    margin: 1rem auto;
+    height: 80%;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, black, grey);
+}
+
+.edgeContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 0.5rem;
+    justify-content: space-evenly;
+    width: 30%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#number{
+    height: 2rem;
+    width: 6.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#number::placeholder{
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cellColor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h5{
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+#color{
+    width: 6.5rem;
+    height: 2rem;
+    border: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.clear{
+    height: 2rem;
+    width: 6.5rem;
+    border: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.right{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    margin: 0.5rem;
+    height: 96%;
+    width: 50vw;
+    display: block;
+}
+
+.grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.cell{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+
